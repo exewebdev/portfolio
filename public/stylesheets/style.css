@@ -1,0 +1,46 @@
+body {
+  background-color: #e4ffc9;
+  padding-top: 50px;
+  font-size: 14px;
+  font-family: Lato,Helvetica,sans-serif;
+}
+
+a {
+  color: #00B7FF;
+  cursor: pointer;
+}
+
+a:hover,
+a:active {
+  color: #00B7FF;
+  text-decoration: underline;
+}
+
+a.danger {
+  color: red;
+}
+
+.spacing {
+  margin-bottom: 20px;
+}
+
+input.ng-invalid.ng-touched {
+  border: 1px solid red;
+}
+
+.btn-green {
+  color: #f8f8f8;
+  background-color: #4BAE4F;
+  border-color: #449d47;
+  margin: 5px 0 5px 5px;
+}
+.btn-lgreen {
+  color: #4BAE4F;
+  background-color: transparent;
+  border-color: #4bae4f;
+}
+.btn-lgreen:hover {
+  color: #fff;
+  background-color: #4BAE4F;
+  border-color: #4bae4f;
+}
