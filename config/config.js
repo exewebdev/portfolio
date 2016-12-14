@@ -6,6 +6,6 @@ var configValues = require('../config/config.json');
 
 module.exports = {
     getDbConnectionString: function() {
-        return 'mongodb://' + configValues.name + ':' + configValues.pwd + '@ds145325.mlab.com:45325/nodetodoapplication';
+        return 'mongodb://' + configValues.name + ':' + configValues.pwd + '@ds133428.mlab.com:33428/my-portfolio';
     }
 };
