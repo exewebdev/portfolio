@@ -12,7 +12,7 @@ import {TodoService} from "./todo.service";
     <div class="inner">
         © 2016 Raul Zuniga.               
         <span>
-        <a target="_blank" href="mailto:raulzuniga78741@gmail.com">raulzuniga78741@gmail.com&nbsp;</a>
+        <a target="_blank" href="mailto:raulzuniga78741@gmail.com"><img src ="/images/mail.png"  alt="MailIcon"></a>
         <a target="_blank" href="https://www.linkedin.com/in/razuniga"><img src ="/images/linkedin.png"  alt="LinkedinIcon"></a>
         <a target="_blank" href="https://github.com/rzuniga64"><img src ="/images/github.png"  alt="GithubIcon"></a>
         </span>
