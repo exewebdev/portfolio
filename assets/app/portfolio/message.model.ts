@@ -1,7 +1,7 @@
 /**
  * JavaScript class which mirrors the database layout.
  */
-export class Todo {
+export class Message {
     name: string;
     email: string;
     content: string;
