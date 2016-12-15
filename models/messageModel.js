@@ -13,7 +13,7 @@ var schema = new Schema({
     content: {type: String, required: true}
 });
 
-schema_plugin(mongooseUniqueValidator);
+schema.plugin(mongooseUniqueValidator);
 
 module.exports = mongoose.model('Message', schema);
 
