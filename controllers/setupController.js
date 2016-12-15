@@ -1,34 +1,22 @@
 /***********************************************************************************************************************
  *  File to seed the MongoDB database using mongoose API.
  **********************************************************************************************************************/
-var Todos = require('../models/todoModel');
+var Messages = require('../models/messageModel');
 
 module.exports = function(app) {
     
-   app.get('/api/setupTodos', function(req, res) {
+   app.get('/api/setupMessages', function(req, res) {
        
        // seed database
-       var starterTodos = [
+       var starterMessages = [
            {
-               username: 'test',
-               content: 'Buy milk',
-               isDone: false,
-               hasAttachment: false
-           },
-           {
-               username: 'test',
-               content: 'Feed dog',
-               isDone: false,
-               hasAttachment: false
-           },
-           {
-               username: 'test',
-               content: 'Learn Node',
-               isDone: false,
-               hasAttachment: false
+               name: 'Roy',
+               email: 'rzuniga64@gmail.com',
+               company: 'Nokia',
+               content: 'Hello'
            }
        ];
-       Todos.create(starterTodos, function(err, results) {
+       Messages.create(starterMessages, function(err, results) {
            res.send(results);
        }); 
    });
