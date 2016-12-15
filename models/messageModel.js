@@ -14,5 +14,6 @@ var schema = new Schema({
 });
 
 schema_plugin(mongooseUniqueValidator);
-module.exports = mongoose.model('Messages', schema);
+
+module.exports = mongoose.model('Message', schema);
 
