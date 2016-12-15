@@ -19,7 +19,7 @@ import { Component } from '@angular/core';
                 <app-resume></app-resume>
             </section>
             <div class="row" id="content-contact">
-                <app-todo-input></app-todo-input>
+                <app-message-input></app-message-input>
             </div><!-- row-->
         </div>
         <div class="row">

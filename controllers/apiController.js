@@ -1,7 +1,7 @@
 /***********************************************************************************************************************
  *  RESTful API for Portfolio application.
  **********************************************************************************************************************/
-var Messages = require('../models/messageModel');
+var Message = require('../models/messageModel');
 var bodyParser = require('body-parser');
 
 module.exports = function(app) {
@@ -12,9 +12,9 @@ module.exports = function(app) {
     /**
      * Return all the messages in the MongoDB in JSON format using mongoose API.
      */
-    app.get('/api/message/', function(req, res, next) {
+    app.get('/api/message', function(req, res, next) {
 
-        Messages.find()
+        Message.find()
             .exec(function (err, docs) {
                 if (err) {
                     return res.status(500).json({

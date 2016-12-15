@@ -2,8 +2,6 @@
  * This creates a resume component.
  */
 import {Component, Input} from "@angular/core";
-import {Todo} from "./todo.model";
-import {TodoService} from "./todo.service";
 
 @Component ({
     selector: 'app-resume',

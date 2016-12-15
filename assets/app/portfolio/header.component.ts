@@ -1,9 +1,7 @@
 /**
  * This creates a header component with full name and title.
  */
-import {Component, Input} from "@angular/core";
-import {Todo} from "./todo.model";
-import {TodoService} from "./todo.service";
+import {Component} from "@angular/core";
 
 @Component ({
     selector: 'app-header',

@@ -13,13 +13,12 @@ import {NavbarComponent}            from "./portfolio/navbar-component";
 import {HeaderComponent}            from "./portfolio/header.component";
 import {ProjectComponent}           from "./portfolio/project-component";
 import {ResumeComponent}            from "./portfolio/resume-component";
-import {TodoComponent}              from "./portfolio/todo.component";
-import {TodoInputComponent}         from "./portfolio/todos-input.component";
+import {MessageInputComponent}      from "./portfolio/message-input.component";
 import {FooterComponent}            from "./portfolio/footer.component";
 import {HashLocationStrategy}       from "@angular/common";
 import {LocationStrategy}           from "@angular/common";
 
-import {TodoService}                from "./portfolio/todo.service";
+import {MessageService}                from "./portfolio/message.service";
 
 @NgModule({
     imports: [
@@ -35,13 +34,12 @@ import {TodoService}                from "./portfolio/todo.service";
         HeaderComponent,
         ProjectComponent,
         ResumeComponent,
-        TodoComponent,
-        TodoInputComponent,
+        MessageInputComponent,
         FooterComponent
     ],
     bootstrap: [ AppComponent ],
     providers:     [
-        TodoService,
+        MessageService,
         [{ provide: LocationStrategy, useClass: HashLocationStrategy }]
     ]
 })
